@@ -159,7 +159,7 @@ struct GetScreenRectTest
 {
     void Test (Session *xgl, unsigned i)
     {
-        unsigned x, y, w, h;
+        int x, y, w, h;
         xgl->GetScreenRect (i, &x, &y, &w, &h);
         stringstream s;
         s << "Device " << i << "'s rectangle is " << w << " X " << h << " at " << x << ", " << y;
